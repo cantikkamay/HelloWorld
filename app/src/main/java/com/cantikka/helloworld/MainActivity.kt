@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             val username = usernameEditText.text.toString()
             val password = passwordEditText.text.toString()
 
-            if ((username == "Cantikka" || username == "Richo") && password == "12345") {
+            if ((username == "Cantikka") && password == "12345") {
                 val intent = Intent(this, DashboardActivity::class.java)
                 intent.putExtra("username", username)
                 startActivity(intent)
